@@ -264,7 +264,7 @@ func restartContainerAndLog(c *model.DockerUpdateContext) error {
 		return err
 	}
 
-	cmd = exec.Command("docker", "compose", "pull")
+	cmd = exec.Command("docker", "compose", "up", "-d")
 	cmd.Dir = c.ContainerContext.Path
 	stdout, err = cmd.CombinedOutput()
 	log.Println(string(stdout))

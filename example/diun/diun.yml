@@ -1,0 +1,21 @@
+db:
+  path: diun.db
+
+watch:
+  workers: 10
+  schedule: "* */6 * * *"
+  firstCheckNotif: true
+
+notif:
+  # Here you configure that diun should notify this service
+  webhook:
+    endpoint: http://127.0.0.1:1323/update/push # This needs to match your host and port of the config.yaml
+    method: POST
+    headers:
+      content-type: application/json
+    timeout: 10s
+
+providers:
+  docker:
+    watchStopped: true
+    watchByDefault: true

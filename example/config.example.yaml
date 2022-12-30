@@ -1,0 +1,10 @@
+discordToken: MTgksfkjgdlr23rdfsdflesrsdafsdf # You can get this one on the discord developer page
+discordChannelId: 1053658105826791536 # The ID of the discord channel.
+host: 127.0.0.1
+port: 1323
+
+# Here you configure which docker containers should post updates
+container:
+  - path: /home/diun/  # The path to the docker-compose.yml
+    name: Test # This name is only used to better identify when posting an update notification
+    image: docker.io/crazymax/diun:latest # This is the important part. This Image-Name needs to be matching the diun-update notification

@@ -1,8 +1,0 @@
-version: "3.1"
-
-services:
-  test:
-    image: postgres:latest
-    container_name: Database_test
-    environment:
-      POSTGRES_PASSWORD: TEST

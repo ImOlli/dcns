@@ -1,9 +1,0 @@
-discordToken: MTA1MzYyMDU5NzI0NDAzOTIyOA.GfxAng.8lBP4hZBQKFrdzjz0gn-6badMQBB4zRTvFCjfc
-discordChannelId: 1053658105826791536
-host: 127.0.0.1
-port: 1323
-
-container:
-  - path: .
-    name: Test
-    image: docker.io/postgres:latest
